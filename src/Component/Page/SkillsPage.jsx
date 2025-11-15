@@ -6,9 +6,8 @@ const SkillsPage = () => {
   return (
     <>
      <Navbar/>
-     <h1>this is Skills page</h1>
-
      <Skills/>
+     
     </>
    
     
