@@ -14,24 +14,24 @@ const Navbar = () => {
 
       {/* Navbar Menu */}
       <div>
-        <ul className="flex w-md justify-around font-small text-xl text-white">
-          <li className="cursor-pointer">
+        <ul className="flex w-md justify-around font-small text-xl text-white cursor-pointer">
+          <li >
             <Link to="/">Home</Link>
           </li>
 
-           <li className="cursor-pointer">
+           <li>
             <Link to="/skills">Skills</Link>
           </li>
 
-          <li className="cursor-pointer">
+          <li >
             <Link to="/project">Project</Link>
           </li>
 
-          <li className="cursor-pointer">
+          {/* <li className="cursor-pointer">
             <Link to="/resume">Resume</Link>
-          </li>
+          </li> */}
 
-          <li className="cursor-pointer">
+          <li >
             <Link to="/contact">Contact</Link>
           </li>
         </ul>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Pdf from '../../public/SinghResume.pdf'
 import {
   FaGithub,
   FaInstagram,
@@ -14,12 +15,12 @@ function Footer() {
       
       {/* -------- Buttons ---------- */}
      <div className="flex flex-row md:flex-row gap-6 mb-8 md:mb-0 items-center">
-  <Link
-    to="/contact"
+  <a
+    href={Pdf}
     className="flex justify-center items-center bg-purple-700 text-white h-10 rounded-lg hover:bg-white hover:text-black transform hover:scale-105 transition duration-300 w-40"
   >
-    Contact
-  </Link>
+    Resume
+  </a>
 
   <Link
     to="/project"

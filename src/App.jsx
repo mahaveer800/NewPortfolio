@@ -5,7 +5,7 @@ import Home from './Component/Page/Home'
 import Contact from './Component/Page/Contact'
 import Skills from './Component/Page/SkillsPage'
 import Project from './Component/Page/Project'
-import Pdf from './Component/Page/Pdf'
+// import Pdf from './Component/Page/Pdf'
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/resume' element={<Pdf/>} />
+        {/* <Route path='/resume' element={<Pdf/>} /> */}
         <Route path='/project' element={<Project />} />
          <Route path='/Skills' element={<Skills/>} />
       </Routes>
