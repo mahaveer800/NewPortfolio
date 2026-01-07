@@ -5,14 +5,15 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import { toast } from 'react-toastify';
 import { motion } from 'framer-motion';
+import Project from './ProjectCard';
 
 
 const Hero = () => {
   return (
     <>
       <Navbar />
-
-      <div className="flex flex-col items-center mt-48 px-4">
+    {/* <div className='h-12 bg-blue-500'></div> */}
+      <div className="flex flex-col items-center  h-[29rem] ">
   <motion.div
         initial={{ opacity: 0, x: -200 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -22,15 +23,15 @@ const Hero = () => {
         id="Hero"
       >
         {/* Image + About Section */}
-        <div className="flex flex-col md:flex-row items-center justify-center md:mx-20 gap-2">
+        <div className="flex flex-col md:flex-row items-center justify-center md:mx-20 gap-2  h-90">
 
           {/* Image */}
 
-          <div className=" md:w-64">
+          <div className=" md:w-64 ">
            <img 
   src={mahi}
   className="
-    shadow-xl rounded-full h-60 md:h-56 w-48 md:w-44 sm:h-40 sm:w-32 object-cover
+    shadow-xl mt-4 rounded-full h-60 md:h-56 w-48 md:w-44 sm:h-40 sm:w-32 object-cover
     transition-transform duration-800 ease-out
     hover:[transform:rotateX(15deg)_rotateY(15deg)_scale(1.1)]
   "
@@ -51,9 +52,9 @@ const Hero = () => {
         </div>
 </motion.div>
 
-<div className='h-4'></div>
+{/* <div className='h-4'></div> */}
         {/* Description */}
-        <div className="flex justify-center mt-16 px-6 md:px-12">
+        <div className="flex justify-center   md:px-12 ">
           <p className="text-lg sm:text-xl md:text-2xl font-bold text-white text-center max-w-3xl">
             As a Frontend Developer, I focus on building high-performance,
             scalable, and visually appealing web applications using React.js.
@@ -61,7 +62,9 @@ const Hero = () => {
         </div>
       </div>
       {/* --------Empty div--------- */}
-      <div className='sm:h-2 md:h-32'></div>
+      {/* <div className='h-2 sm:h-2 md:h-32 '></div> */}
+
+    
      
       <Footer />
     </>

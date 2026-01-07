@@ -14,7 +14,7 @@ function Footer() {
     <div className="mt-32 py-16 px-6 gap-10 sm:px-12 flex flex-col md:flex-row justify-between items-center w-full  text-white">
       
       {/* -------- Buttons ---------- */}
-     <div className="flex flex-row md:flex-row gap-6 mb-8 md:mb-0 items-center">
+     <div className="flex flex-row md:flex-row gap-6 mb-12 md:mb-0 items-center">
   <a
     href={Pdf}
     className="flex justify-center items-center bg-purple-700 text-white h-10 rounded-lg hover:bg-white hover:text-black transform hover:scale-105 transition duration-300 w-40"
@@ -32,8 +32,8 @@ function Footer() {
 
 
       {/* -------- Social Icons ---------- */}
-      <div className="mt-10 sm:mt-28">
-        <ul className="flex gap-8 sm:gap-10 text-3xl justify-center">
+      <div className="mt-16 sm:mt-40">
+        <ul className="flex gap-8 sm:gap-4 text-3xl justify-center">
           <a href="https://github.com/mahaveer800" target="_blank" rel="noreferrer">
             <FaGithub className="hover:text-black duration-200" />
           </a>

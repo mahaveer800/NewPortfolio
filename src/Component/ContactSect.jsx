@@ -52,16 +52,23 @@ const ContactSect = () => {
         className="text-center p-6 py-20 lg:px-32 w-full overflow-hidden"
         id="Contact"
       >
-       <div className='w-full flex items-center justify-center  h-96'>
+        
+
+       <div className='w-full flex items-center justify-center h-[84vh]  gap-6 sm:flex-col md:flex-row '>
+        {/* About me */}
+        <div className=' text-amber-50 w-[30%] h-[60%]  text-center justify-center align-middle rounded-2xl sm:h-[30%] lg:w-[30%] lg:h-[40%] sm:w-full '>
+       <h2 className='text-4xl font-bold'>hey You can</h2>
+       <p className='text-2xl'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est dolore pariatur omnis at praesentium in voluptas libero excepturi commodi eaque nobis voluptatum adipisci, accusamus fuga itaque optio odit voluptatem magnam.</p>
+        </div>
         <form
           onSubmit={onSubmit}
-          className="max-w-3xl mx-auto text-white  w-xl   "
+          className="max-w-3xl mx-auto text-white  w-2xl h-[55%]  "
         >
-          <div className="flex flex-wrap">
-            <div className="w-full md:w-1/2 text-left">
+          <div className="flex flex-row gap-2 w-2xl h-fit ">
+            <div className=" md:w-1/2 text-left h-30 ">
               Your Name
               <input
-                className="w-full border border-purple-100 rounded px-4 py-6 mt-2"
+                className="w-full border border-b-blue-200 rounded px-8 h-15 py-2"
                 type="text"
                 name="name"
                 placeholder="Your Name"
@@ -71,7 +78,7 @@ const ContactSect = () => {
             <div className="w-full md:w-1/2 text-left">
               Your Email
               <input
-                className="w-full border border-gray-300 rounded px-4 py-3 mt-2 mx-2"
+                className="w-full border border-gray-300 rounded px-8 h-15 py-2"
                 type="email"
                 name="email"
                 placeholder="Your Email"
@@ -80,7 +87,7 @@ const ContactSect = () => {
             </div>
           </div>
 
-          <div className="my-6 text-left">
+          <div className="my-4 text-left">
             Message
             <textarea
               className="w-full border border-gray-300 rounded py-3 px-4 mt-2 h-48 resize-none"
@@ -97,7 +104,7 @@ const ContactSect = () => {
         </div>
 
       </motion.div>
-<div className='h-8'></div>
+
       <Footer />
     </div>
   );

@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from '../Navbar'
 import ContactSect from '../ContactSect'
-
 const Contact = () => {
   return (
     <>
     <Navbar/>
   
     <ContactSect/>
+    
     </>
   )
 }

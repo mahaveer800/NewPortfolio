@@ -2,7 +2,8 @@ import React from 'react';
 import RealState from '../../src/assets/realstate1.png';
 import Chatbot from '../../src/assets/chatbot.png';
 import Youtube from '../../src/assets/youtube.png';
-import Resturant from '../../src/assets/restuarent.png';
+import QuizApp from '../../src/assets/Quiz.png';
+import Hospital from '../../src/assets/Hospital.png';
 import { motion } from 'framer-motion';
 const projects = [
   {
@@ -30,20 +31,29 @@ const projects = [
   },
 
     {
-    title: 'Food Day App',
-    description: 'A food Disributer page with animations and smooth scroll.',
-    image: Resturant,
-    live: 'https://github.com/mahaveer800/Hospital-Management',
+    title: 'Quiz App',
+    description: 'A Quiz Application for your practice',
+    image: QuizApp,
+    live: 'https://quiz-application-sandy-nine.vercel.app',
+    github: 'https://github.com/mahaveer800/Quiz-Application',
+  }, 
+
+  {
+    title: 'Hospital',
+    description: 'A Hospital management Application ',
+    image: Hospital,
+    live: 'https://hospital-management-wine.vercel.app',
     github: 'https://github.com/mahaveer800/Hospital-Management',
   },
+ 
   // Add more projects here
 ];
 
 const Project = () => {
   return (
 
-    <div className="min-h-screen  px-6 py-12">
-     <div className='h-2'></div>
+    <div className="h-[85%] mt-4 min-h-screen  px-6 py-20">
+     <div className='h-4'></div>
        <motion.div
         initial={{ opacity: 0, x: -200 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -52,7 +62,7 @@ const Project = () => {
         className="text-center p-6 py-20 lg:px-32 w-full overflow-hidden"
         id="Project"
       >
-      <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 mt-20">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -61,9 +71,9 @@ const Project = () => {
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-48 object-cover"
+              className="w-full  object-cover"
             />
-            <div className="p-6">
+            <div className="px-6 ">
               <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
               <p className="text-white text-sm mb-4">{project.description}</p>
               <div className="flex justify-between items-center">

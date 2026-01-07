@@ -16,8 +16,12 @@ import {
 import { MdAnimation } from 'react-icons/md'; // Placeholder for Framer Motion
 
 const skills = [
-  { name: 'HTML', icon: <FaHtml5 className="text-orange-500" /> },
-  { name: 'CSS', icon: <FaCss3Alt className="text-blue-500" /> },
+  { name: 'HTML',
+     icon: <FaHtml5 className="text-orange-500" /> 
+    },
+  { name: 'CSS',
+     icon: <FaCss3Alt className="text-blue-500" />
+     },
   { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-cyan-400" /> },
   { name: 'JavaScript', icon: <FaJs className="text-yellow-400" /> },
   { name: 'React JS', icon: <FaReact className="text-blue-400" /> },

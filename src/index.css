@@ -3,15 +3,20 @@
     margin: 0;
     padding: 0;
 }
-body{
+body{position: relative;
+    overflow-x: clip;
+    background-attachment: fixed;
  height: 100vh;
   background-image: url('./assets/2.jpg');
-  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
-  background-size: cover; 
+  background-repeat: no-repeat;
+  width: 100%;
+  /* min-height: 100dvh; */
  padding-top: 1rem;
  padding-right: 1rem;
  padding-left: 1rem;
+ max-height: 100%;
 }
 
 
