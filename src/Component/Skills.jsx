@@ -33,50 +33,59 @@ const skills = [
 
 const Skills = () => {
   return (
-    <>
-    <section className=" flex flex-col items-center text-white py-12 px-6 md:px-20 ">
+   <section
+  id="Skills"
+  className="flex items-center justify-center h-[90vh] text-white py-6"
+>
+      {/* MAIN CENTER WRAPPER */}
+      <div className="max-w-6xl w-full flex flex-col items-center justify-center text-center gap-5">
+
+
+        {/* HEADING */}
         <motion.div
-        initial={{ opacity: 0, x: -200 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1.2 }}
-        viewport={{ once: false, amount: 0.2 }}
-        className="text-center p-6 py-20 lg:px-32 w-full overflow-hidden"
-        id="Skills"
-      >
-      <h2 className="text-3xl font-bold mb-4 text-purple-900">What I Do</h2>
-
-      </motion.div>
-      <p className="text-md mb-8 max-w-2xl ">
-        <span className='text-purple-900 font-bold text-2xl'>I’m </span>Mahaveer from Budaun, India. I’ve completed my BCA and currently pursuing Full Stack Web Development at PW Skills. I specialize in building responsive React apps, integrating APIs, and polishing UI/UX with animations and modern design.
-      </p>
-
-
-      <div className='h-4'></div>
-        <motion.div
-        initial={{ opacity: 0, x: 200 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1.2 }}
-        viewport={{ once: false, amount: 0.2 }}
-        
-      >
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-        {skills.map((skill, index) => (
-          <div
-            key={index}
-            className="flex flex-col h-18 w-40 items-center bg-purple-950 p-4 rounded-tl-xl
-            rounded-br-xl hover:bg-gray-700 transition duration-300 ease-in-out"
-          >
-            <div className="text-4xl mb-2">{skill.icon}</div>
-            <span className="text-sm font-medium">{skill.name}</span>
-          </div>
-        ))}
-        </div>
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-3xl font-bold mb-6 text-purple-500">
+            What I Do
+          </h2>
         </motion.div>
-      {/* </div> */}
 
+        {/* DESCRIPTION */}
+        <p className="text-md mb-14 max-w-3xl mx-auto text-gray-300 leading-relaxed">
+          <span className="text-purple-500 font-bold text-xl">I’m </span>
+          Mahaveer from Budaun, India. I’ve completed my BCA and currently
+          pursuing Full Stack Web Development at PW Skills. I specialize in
+          building responsive React apps, integrating APIs, and polishing
+          UI/UX with animations and modern design.
+        </p>
+
+        {/* SKILLS GRID */}
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="flex justify-center"
+        >
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+            {skills.map((skill, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center w-40 bg-purple-950 p-4 rounded-xl
+                hover:bg-purple-800 transition duration-300"
+              >
+                <div className="text-4xl mb-2">{skill.icon}</div>
+                <span className="text-sm font-medium">{skill.name}</span>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
+      </div>
     </section>
-    
-    </>
   );
 };
 

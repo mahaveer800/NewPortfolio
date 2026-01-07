@@ -56,10 +56,16 @@ const ContactSect = () => {
 
        <div className='w-full flex items-center justify-center h-[84vh]  gap-6 sm:flex-col md:flex-row '>
         {/* About me */}
-        <div className=' text-amber-50 w-[30%] h-[60%]  text-center justify-center align-middle rounded-2xl sm:h-[30%] lg:w-[30%] lg:h-[40%] sm:w-full '>
-       <h2 className='text-4xl font-bold'>hey You can</h2>
-       <p className='text-2xl'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est dolore pariatur omnis at praesentium in voluptas libero excepturi commodi eaque nobis voluptatum adipisci, accusamus fuga itaque optio odit voluptatem magnam.</p>
-        </div>
+      <div className="text-amber-50 w-[30%] h-[60%] text-center rounded-2xl sm:h-auto lg:w-[30%] lg:h-[40%] sm:w-full">
+  <h2 className="text-6xl font-bold mb-4 text-fuchsia-800">
+    Contact Me
+  </h2>
+  <p className="text-lg text-emerald-100">
+    Let’s connect and talk about your ideas, projects, or opportunities.
+    Drop a message and I’ll get back to you soon.
+  </p>
+</div>
+
         <form
           onSubmit={onSubmit}
           className="max-w-3xl mx-auto text-white  w-2xl h-[55%]  "
